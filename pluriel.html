@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<script>
+			var pluriel = "s";
+			var nombre = prompt("Combien de raclette(s) mangez vous chaque hiver?");
+
+			if (nombre == 0){
+			alert("Vous ne mangez pas de raclette. Vous êtes soit intolérant au lactose soit très dur avec vous même.");
+			}
+
+			else if (nombre == 1){
+			alert("Vous mangez "+nombre+" raclette, très raisonnable.");
+			}
+
+			else if ((nombre > 1)&&(nombre <= 4)){
+			alert("Vous mangez "+nombre+" raclette"+pluriel+", on commence à le sentir passer.");
+			}
+
+			else if ((nombre > 4)&&(nombre <= 10)){
+			alert("Vous mangez "+nombre+" raclette"+pluriel+". Un conseil, utlisez deux palettes à la fois pour plus de rentabilité.");
+			}
+
+			else if (nombre > 10){
+			alert("Vous mangez "+nombre+" raclette"+pluriel+". Arrêtez, tout de suite.");
+		};
+
+		</script>
+	</head>
+<body>
+
+</body>
+</html>
